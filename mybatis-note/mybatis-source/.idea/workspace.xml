@@ -1,0 +1,721 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="b97c69f5-a1ed-45f6-aeae-3426ea8038c4" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/mybatis/SqlSessionFactoryDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/mybatis/mapper/UserMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/mybatis/model/entity/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/ibatis/annotations/Arg.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/ibatis/annotations/AutomapConstructor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/ibatis/annotations/CacheNamespace.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/ibatis/annotations/CacheNamespaceRef.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/ibatis/annotations/Case.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/ibatis/annotations/ConstructorArgs.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/ibatis/annotations/Delete.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/ibatis/annotations/DeleteProvider.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/ibatis/annotations/Flush.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/ibatis/annotations/Insert.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/ibatis/annotations/InsertProvider.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/ibatis/annotations/Lang.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/ibatis/annotations/Many.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/ibatis/annotations/MapKey.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/ibatis/annotations/Mapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/ibatis/annotations/One.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/ibatis/annotations/Options.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/ibatis/annotations/Param.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/ibatis/annotations/Property.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/ibatis/annotations/Result.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/ibatis/annotations/ResultMap.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/ibatis/annotations/ResultType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/ibatis/annotations/Results.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/ibatis/annotations/Select.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/ibatis/annotations/SelectKey.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/ibatis/annotations/SelectProvider.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/ibatis/annotations/TypeDiscriminator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/ibatis/annotations/Update.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/ibatis/annotations/UpdateProvider.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/ibatis/annotations/package-info.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/ibatis/binding/BindingException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/ibatis/binding/MapperMethod.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/ibatis/binding/MapperProxy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/ibatis/binding/MapperProxyFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/ibatis/binding/MapperRegistry.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/ibatis/binding/package-info.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/ibatis/builder/BaseBuilder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/ibatis/builder/BuilderException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/ibatis/builder/CacheRefResolver.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/ibatis/builder/IncompleteElementException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/ibatis/builder/InitializingObject.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/ibatis/builder/MapperBuilderAssistant.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/ibatis/builder/ParameterExpression.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/ibatis/builder/ResultMapResolver.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/ibatis/builder/SqlSourceBuilder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/ibatis/builder/StaticSqlSource.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/ibatis/builder/annotation/MapperAnnotationBuilder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/ibatis/builder/annotation/MethodResolver.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/ibatis/builder/annotation/ProviderContext.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/ibatis/builder/annotation/ProviderMethodResolver.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/ibatis/builder/annotation/ProviderSqlSource.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/ibatis/builder/annotation/package-info.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/ibatis/builder/package-info.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/ibatis/builder/xml/XMLConfigBuilder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/ibatis/builder/xml/XMLIncludeTransformer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/ibatis/builder/xml/XMLMapperBuilder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/ibatis/builder/xml/XMLMapperEntityResolver.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/ibatis/builder/xml/XMLStatementBuilder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/ibatis/builder/xml/mybatis-3-config.dtd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/ibatis/builder/xml/mybatis-3-mapper.dtd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/ibatis/builder/xml/mybatis-config.xsd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/ibatis/builder/xml/mybatis-mapper.xsd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/ibatis/builder/xml/package-info.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/ibatis/cache/Cache.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/ibatis/cache/CacheException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/ibatis/cache/CacheKey.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/ibatis/cache/NullCacheKey.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/ibatis/cache/TransactionalCacheManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/ibatis/cache/decorators/BlockingCache.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/ibatis/cache/decorators/FifoCache.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/ibatis/cache/decorators/LoggingCache.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/ibatis/cache/decorators/LruCache.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/ibatis/cache/decorators/ScheduledCache.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/ibatis/cache/decorators/SerializedCache.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/ibatis/cache/decorators/SoftCache.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/ibatis/cache/decorators/SynchronizedCache.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/ibatis/cache/decorators/TransactionalCache.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/ibatis/cache/decorators/WeakCache.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/ibatis/cache/decorators/package-info.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/ibatis/cache/impl/PerpetualCache.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/ibatis/cache/impl/package-info.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/ibatis/cache/package-info.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/ibatis/cursor/Cursor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/ibatis/cursor/defaults/DefaultCursor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/ibatis/cursor/defaults/package-info.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/ibatis/cursor/package-info.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/ibatis/datasource/DataSourceException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/ibatis/datasource/DataSourceFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/ibatis/datasource/jndi/JndiDataSourceFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/ibatis/datasource/jndi/package-info.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/ibatis/datasource/package-info.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/ibatis/datasource/pooled/PoolState.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/ibatis/datasource/pooled/PooledConnection.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/ibatis/datasource/pooled/PooledDataSource.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/ibatis/datasource/pooled/PooledDataSourceFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/ibatis/datasource/pooled/package-info.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/ibatis/datasource/unpooled/UnpooledDataSource.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/ibatis/datasource/unpooled/UnpooledDataSourceFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/ibatis/datasource/unpooled/package-info.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/ibatis/exceptions/ExceptionFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/ibatis/exceptions/IbatisException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/ibatis/exceptions/PersistenceException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/ibatis/exceptions/TooManyResultsException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/ibatis/exceptions/package-info.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/ibatis/executor/BaseExecutor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/ibatis/executor/BatchExecutor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/ibatis/executor/BatchExecutorException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/ibatis/executor/BatchResult.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/ibatis/executor/CachingExecutor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/ibatis/executor/ErrorContext.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/ibatis/executor/ExecutionPlaceholder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/ibatis/executor/Executor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/ibatis/executor/ExecutorException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/ibatis/executor/ResultExtractor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/ibatis/executor/ReuseExecutor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/ibatis/executor/SimpleExecutor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/ibatis/executor/keygen/Jdbc3KeyGenerator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/ibatis/executor/keygen/KeyGenerator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/ibatis/executor/keygen/NoKeyGenerator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/ibatis/executor/keygen/SelectKeyGenerator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/ibatis/executor/keygen/package-info.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/ibatis/executor/loader/AbstractEnhancedDeserializationProxy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/ibatis/executor/loader/AbstractSerialStateHolder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/ibatis/executor/loader/CglibProxyFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/ibatis/executor/loader/JavassistProxyFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/ibatis/executor/loader/ProxyFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/ibatis/executor/loader/ResultLoader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/ibatis/executor/loader/ResultLoaderMap.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/ibatis/executor/loader/WriteReplaceInterface.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/ibatis/executor/loader/cglib/CglibProxyFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/ibatis/executor/loader/cglib/CglibSerialStateHolder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/ibatis/executor/loader/cglib/package-info.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/ibatis/executor/loader/javassist/JavassistProxyFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/ibatis/executor/loader/javassist/JavassistSerialStateHolder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/ibatis/executor/loader/javassist/package-info.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/ibatis/executor/loader/package-info.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/ibatis/executor/package-info.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/ibatis/executor/parameter/ParameterHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/ibatis/executor/parameter/package-info.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/ibatis/executor/result/DefaultMapResultHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/ibatis/executor/result/DefaultResultContext.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/ibatis/executor/result/DefaultResultHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/ibatis/executor/result/ResultMapException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/ibatis/executor/result/package-info.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/ibatis/executor/resultset/DefaultResultSetHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/ibatis/executor/resultset/ResultSetHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/ibatis/executor/resultset/ResultSetWrapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/ibatis/executor/resultset/package-info.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/ibatis/executor/statement/BaseStatementHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/ibatis/executor/statement/CallableStatementHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/ibatis/executor/statement/PreparedStatementHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/ibatis/executor/statement/RoutingStatementHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/ibatis/executor/statement/SimpleStatementHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/ibatis/executor/statement/StatementHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/ibatis/executor/statement/StatementUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/ibatis/executor/statement/package-info.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/ibatis/io/ClassLoaderWrapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/ibatis/io/DefaultVFS.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/ibatis/io/ExternalResources.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/ibatis/io/JBoss6VFS.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/ibatis/io/ResolverUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/ibatis/io/Resources.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/ibatis/io/VFS.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/ibatis/io/package-info.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/ibatis/jdbc/AbstractSQL.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/ibatis/jdbc/Null.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/ibatis/jdbc/RuntimeSqlException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/ibatis/jdbc/SQL.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/ibatis/jdbc/ScriptRunner.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/ibatis/jdbc/SelectBuilder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/ibatis/jdbc/SqlBuilder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/ibatis/jdbc/SqlRunner.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/ibatis/jdbc/package-info.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/ibatis/lang/UsesJava7.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/ibatis/lang/UsesJava8.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/ibatis/lang/package-info.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/ibatis/logging/Log.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/ibatis/logging/LogException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/ibatis/logging/LogFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/ibatis/logging/commons/JakartaCommonsLoggingImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/ibatis/logging/commons/package-info.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/ibatis/logging/jdbc/BaseJdbcLogger.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/ibatis/logging/jdbc/ConnectionLogger.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/ibatis/logging/jdbc/PreparedStatementLogger.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/ibatis/logging/jdbc/ResultSetLogger.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/ibatis/logging/jdbc/StatementLogger.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/ibatis/logging/jdbc/package-info.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/ibatis/logging/jdk14/Jdk14LoggingImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/ibatis/logging/jdk14/package-info.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/ibatis/logging/log4j/Log4jImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/ibatis/logging/log4j/package-info.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/ibatis/logging/log4j2/Log4j2AbstractLoggerImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/ibatis/logging/log4j2/Log4j2Impl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/ibatis/logging/log4j2/Log4j2LoggerImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/ibatis/logging/log4j2/package-info.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/ibatis/logging/nologging/NoLoggingImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/ibatis/logging/nologging/package-info.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/ibatis/logging/package-info.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/ibatis/logging/slf4j/Slf4jImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/ibatis/logging/slf4j/Slf4jLocationAwareLoggerImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/ibatis/logging/slf4j/Slf4jLoggerImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/ibatis/logging/slf4j/package-info.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/ibatis/logging/stdout/StdOutImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/ibatis/logging/stdout/package-info.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/ibatis/mapping/BoundSql.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/ibatis/mapping/CacheBuilder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/ibatis/mapping/DatabaseIdProvider.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/ibatis/mapping/DefaultDatabaseIdProvider.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/ibatis/mapping/Discriminator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/ibatis/mapping/Environment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/ibatis/mapping/FetchType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/ibatis/mapping/MappedStatement.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/ibatis/mapping/ParameterMap.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/ibatis/mapping/ParameterMapping.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/ibatis/mapping/ParameterMode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/ibatis/mapping/ResultFlag.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/ibatis/mapping/ResultMap.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/ibatis/mapping/ResultMapping.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/ibatis/mapping/ResultSetType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/ibatis/mapping/SqlCommandType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/ibatis/mapping/SqlSource.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/ibatis/mapping/StatementType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/ibatis/mapping/VendorDatabaseIdProvider.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/ibatis/mapping/package-info.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/ibatis/package-info.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/ibatis/parsing/GenericTokenParser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/ibatis/parsing/ParsingException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/ibatis/parsing/PropertyParser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/ibatis/parsing/TokenHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/ibatis/parsing/XNode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/ibatis/parsing/XPathParser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/ibatis/parsing/package-info.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/ibatis/plugin/Interceptor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/ibatis/plugin/InterceptorChain.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/ibatis/plugin/Intercepts.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/ibatis/plugin/Invocation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/ibatis/plugin/Plugin.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/ibatis/plugin/PluginException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/ibatis/plugin/Signature.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/ibatis/plugin/package-info.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/ibatis/reflection/ArrayUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/ibatis/reflection/DefaultReflectorFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/ibatis/reflection/ExceptionUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/ibatis/reflection/Jdk.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/ibatis/reflection/MetaClass.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/ibatis/reflection/MetaObject.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/ibatis/reflection/OptionalUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/ibatis/reflection/ParamNameResolver.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/ibatis/reflection/ParamNameUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/ibatis/reflection/ReflectionException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/ibatis/reflection/Reflector.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/ibatis/reflection/ReflectorFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/ibatis/reflection/SystemMetaObject.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/ibatis/reflection/TypeParameterResolver.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/ibatis/reflection/factory/DefaultObjectFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/ibatis/reflection/factory/ObjectFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/ibatis/reflection/factory/package-info.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/ibatis/reflection/invoker/AmbiguousMethodInvoker.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/ibatis/reflection/invoker/GetFieldInvoker.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/ibatis/reflection/invoker/Invoker.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/ibatis/reflection/invoker/MethodInvoker.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/ibatis/reflection/invoker/SetFieldInvoker.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/ibatis/reflection/invoker/package-info.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/ibatis/reflection/package-info.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/ibatis/reflection/property/PropertyCopier.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/ibatis/reflection/property/PropertyNamer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/ibatis/reflection/property/PropertyTokenizer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/ibatis/reflection/property/package-info.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/ibatis/reflection/wrapper/BaseWrapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/ibatis/reflection/wrapper/BeanWrapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/ibatis/reflection/wrapper/CollectionWrapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/ibatis/reflection/wrapper/DefaultObjectWrapperFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/ibatis/reflection/wrapper/MapWrapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/ibatis/reflection/wrapper/ObjectWrapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/ibatis/reflection/wrapper/ObjectWrapperFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/ibatis/reflection/wrapper/package-info.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/ibatis/scripting/LanguageDriver.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/ibatis/scripting/LanguageDriverRegistry.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/ibatis/scripting/ScriptingException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/ibatis/scripting/defaults/DefaultParameterHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/ibatis/scripting/defaults/RawLanguageDriver.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/ibatis/scripting/defaults/RawSqlSource.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/ibatis/scripting/defaults/package-info.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/ibatis/scripting/package-info.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/ibatis/scripting/xmltags/ChooseSqlNode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/ibatis/scripting/xmltags/DynamicContext.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/ibatis/scripting/xmltags/DynamicSqlSource.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/ibatis/scripting/xmltags/ExpressionEvaluator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/ibatis/scripting/xmltags/ForEachSqlNode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/ibatis/scripting/xmltags/IfSqlNode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/ibatis/scripting/xmltags/MixedSqlNode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/ibatis/scripting/xmltags/OgnlCache.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/ibatis/scripting/xmltags/OgnlClassResolver.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/ibatis/scripting/xmltags/OgnlMemberAccess.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/ibatis/scripting/xmltags/SetSqlNode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/ibatis/scripting/xmltags/SqlNode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/ibatis/scripting/xmltags/StaticTextSqlNode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/ibatis/scripting/xmltags/TextSqlNode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/ibatis/scripting/xmltags/TrimSqlNode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/ibatis/scripting/xmltags/VarDeclSqlNode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/ibatis/scripting/xmltags/WhereSqlNode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/ibatis/scripting/xmltags/XMLLanguageDriver.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/ibatis/scripting/xmltags/XMLScriptBuilder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/ibatis/scripting/xmltags/package-info.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/ibatis/session/AutoMappingBehavior.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/ibatis/session/AutoMappingUnknownColumnBehavior.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/ibatis/session/Configuration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/ibatis/session/ExecutorType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/ibatis/session/LocalCacheScope.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/ibatis/session/ResultContext.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/ibatis/session/ResultHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/ibatis/session/RowBounds.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/ibatis/session/SqlSession.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/ibatis/session/SqlSessionException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/ibatis/session/SqlSessionFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/ibatis/session/SqlSessionFactoryBuilder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/ibatis/session/SqlSessionManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/ibatis/session/TransactionIsolationLevel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/ibatis/session/defaults/DefaultSqlSession.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/ibatis/session/defaults/DefaultSqlSessionFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/ibatis/session/defaults/package-info.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/ibatis/session/package-info.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/ibatis/transaction/Transaction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/ibatis/transaction/TransactionException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/ibatis/transaction/TransactionFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/ibatis/transaction/jdbc/JdbcTransaction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/ibatis/transaction/jdbc/JdbcTransactionFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/ibatis/transaction/jdbc/package-info.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/ibatis/transaction/managed/ManagedTransaction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/ibatis/transaction/managed/ManagedTransactionFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/ibatis/transaction/managed/package-info.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/ibatis/transaction/package-info.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/ibatis/type/Alias.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/ibatis/type/ArrayTypeHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/ibatis/type/BaseTypeHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/ibatis/type/BigDecimalTypeHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/ibatis/type/BigIntegerTypeHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/ibatis/type/BlobByteObjectArrayTypeHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/ibatis/type/BlobInputStreamTypeHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/ibatis/type/BlobTypeHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/ibatis/type/BooleanTypeHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/ibatis/type/ByteArrayTypeHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/ibatis/type/ByteArrayUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/ibatis/type/ByteObjectArrayTypeHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/ibatis/type/ByteTypeHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/ibatis/type/CharacterTypeHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/ibatis/type/ClobReaderTypeHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/ibatis/type/ClobTypeHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/ibatis/type/DateOnlyTypeHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/ibatis/type/DateTypeHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/ibatis/type/DoubleTypeHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/ibatis/type/EnumOrdinalTypeHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/ibatis/type/EnumTypeHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/ibatis/type/FloatTypeHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/ibatis/type/InstantTypeHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/ibatis/type/IntegerTypeHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/ibatis/type/JapaneseDateTypeHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/ibatis/type/JdbcType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/ibatis/type/LocalDateTimeTypeHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/ibatis/type/LocalDateTypeHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/ibatis/type/LocalTimeTypeHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/ibatis/type/LongTypeHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/ibatis/type/MappedJdbcTypes.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/ibatis/type/MappedTypes.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/ibatis/type/MonthTypeHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/ibatis/type/NClobTypeHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/ibatis/type/NStringTypeHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/ibatis/type/ObjectTypeHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/ibatis/type/OffsetDateTimeTypeHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/ibatis/type/OffsetTimeTypeHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/ibatis/type/ShortTypeHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/ibatis/type/SimpleTypeRegistry.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/ibatis/type/SqlDateTypeHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/ibatis/type/SqlTimeTypeHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/ibatis/type/SqlTimestampTypeHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/ibatis/type/SqlxmlTypeHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/ibatis/type/StringTypeHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/ibatis/type/TimeOnlyTypeHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/ibatis/type/TypeAliasRegistry.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/ibatis/type/TypeException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/ibatis/type/TypeHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/ibatis/type/TypeHandlerRegistry.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/ibatis/type/TypeReference.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/ibatis/type/UnknownTypeHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/ibatis/type/YearMonthTypeHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/ibatis/type/YearTypeHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/ibatis/type/ZonedDateTimeTypeHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/ibatis/type/package-info.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/jdbc.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/log4j.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/mybatis-config.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mybatis-demo/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../mybatis-demo/.idea/workspace.xml" afterDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/out/" />
+    <ignored path="$PROJECT_DIR$/target/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/org/apache/ibatis/io/VFS.java">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="442">
+              <caret line="17" selection-start-line="17" selection-end-line="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/jdbc.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="78">
+              <caret line="3" column="15" selection-start-line="3" selection-start-column="15" selection-end-line="3" selection-end-column="15" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/example/mybatis/model/entity/User.java">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/mybatis-config.xml">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/log4j.properties">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/pom.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="userSettingsFile" value="D:\workspace\apache-maven-3.6.1\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectConfigurationFiles">
+    <option name="files">
+      <list>
+        <option value="$PROJECT_DIR$/.idea/compiler.xml" />
+        <option value="$PROJECT_DIR$/.idea/vcs.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="976" />
+    <option name="height" value="1056" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="mybatis-source" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mybatis-source" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mybatis-source" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mybatis-source" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mybatis-source" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mybatis-source" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mybatis-source" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mybatis-source" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mybatis-source" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mybatis-source" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mybatis-source" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mybatis-source" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="example" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mybatis-source" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mybatis-source" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="example" type="462c0819:PsiDirectoryNode" />
+              <item name="mybatis" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mybatis-source" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mybatis-source" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="example" type="462c0819:PsiDirectoryNode" />
+              <item name="mybatis" type="462c0819:PsiDirectoryNode" />
+              <item name="model" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mybatis-source" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mybatis-source" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="example" type="462c0819:PsiDirectoryNode" />
+              <item name="mybatis" type="462c0819:PsiDirectoryNode" />
+              <item name="model" type="462c0819:PsiDirectoryNode" />
+              <item name="entity" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Foobar\mybatis-note\mybatis-source\src\main\java" />
+      <recent name="D:\Foobar\mybatis-note\mybatis-source\src\main\resources" />
+      <recent name="D:\Foobar\mybatis-note\mybatis-source" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="b97c69f5-a1ed-45f6-aeae-3426ea8038c4" name="Default Changelist" comment="" />
+      <created>1592321833715</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1592321833715</updated>
+      <workItem from="1592321837247" duration="324000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="324000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Designer" />
+      <window_info id="Image Layers" />
+      <window_info id="Capture Tool" />
+      <window_info id="UI Designer" />
+      <window_info id="Favorites" side_tool="true" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Tail" />
+      <window_info anchor="bottom" id="Terminal" />
+      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info anchor="bottom" id="Database Changes" />
+      <window_info anchor="bottom" id="Version Control" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="right" id="Maven" />
+      <window_info anchor="right" id="RestServices" />
+      <window_info anchor="right" id="Palette" />
+      <window_info anchor="right" id="Capture Analysis" />
+      <window_info anchor="right" id="Mybatis datasource" side_tool="true" />
+      <window_info anchor="right" id="Database" />
+      <window_info anchor="right" id="Palette&#9;" />
+      <window_info anchor="right" id="Theme Preview" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/apache/ibatis/io/VFS.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/mybatis-config.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/log4j.properties">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/jdbc.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="78">
+          <caret line="3" column="15" selection-start-line="3" selection-start-column="15" selection-end-line="3" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/mybatis/config/ExampleTypeHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="182">
+          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/mybatis/config/ExamplePlugin.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/mybatis/config/ExampleObjectFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="182">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/mybatis/model/entity/User.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>
