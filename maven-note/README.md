@@ -25,4 +25,4 @@ Maven学习笔记，了解Maven的核心功能和常用配置。通过阅读Mave
 * 部署到远程仓库
 * 推荐阅读
 
-详细内容见[Maven笔记](http://note.youdao.com/noteshare?id=68fdb08cef51ec635e7917cee422121b)
+详细内容见[Maven笔记](https://www.yuque.com/mizu/akane-note/mhx2n1)
