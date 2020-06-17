@@ -11,7 +11,7 @@
         <property name="bio" value="Spring IoC dependency lookup"/>
     </bean>
 
-    <!-- primary只找主要的 -->
+    <!-- primary 优先查找 -->
     <bean id="superUser" class="com.example.ioc.dependency.domain.SuperUser" parent="user" primary="true">
         <!-- collaborators and configuration for this bean go here -->
         <!-- setter getter 注入 -->

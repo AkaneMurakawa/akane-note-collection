@@ -15,9 +15,8 @@
  */
 package org.apache.ibatis.scripting.xmltags;
 
-import ognl.DefaultClassResolver;
-
 import org.apache.ibatis.io.Resources;
+import org.apache.ibatis.ognl.DefaultClassResolver;
 
 /**
  * Custom ognl {@code ClassResolver} which behaves same like ognl's

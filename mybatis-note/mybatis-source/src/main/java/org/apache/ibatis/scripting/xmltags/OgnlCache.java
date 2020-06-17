@@ -17,11 +17,9 @@ package org.apache.ibatis.scripting.xmltags;
 
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
-
-import ognl.Ognl;
-import ognl.OgnlException;
-
 import org.apache.ibatis.builder.BuilderException;
+import org.apache.ibatis.ognl.Ognl;
+import org.apache.ibatis.ognl.OgnlException;
 
 /**
  * Caches OGNL parsed expressions.
