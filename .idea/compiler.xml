@@ -19,6 +19,7 @@
       <module name="mybatis-demo" target="1.8" />
       <module name="mybatis-demo (1)" target="1.8" />
       <module name="mybatis-note" target="1.8" />
+      <module name="mybatis-parent" target="1.8" />
       <module name="mybatis-source" target="1.8" />
       <module name="mybatis-spring-demo" target="1.8" />
       <module name="redis-cache" target="1.8" />

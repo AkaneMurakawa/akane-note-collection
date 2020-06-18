@@ -17,7 +17,7 @@ MyBatis 是一款优秀的持久层框架，它支持自定义 SQL、存储过�
 
 在[mybatis-spring-demo](mybatis-spring-demo)示例中，为了方便，我们使用Spring注解的方法，而不是XML的方式，在Mapper中我们也是使用Mybatis注解的方式。
 
-在[mybatis-source](mybatis-source)示例中，这一部分则为源码阅读。为了方便直接在源码上编写注释，在这里我将源码导入到了项目中。
+在[mybatis-source](mybatis-source)示例中，这一部分则为源码阅读。
 
 ## 阅读
 
