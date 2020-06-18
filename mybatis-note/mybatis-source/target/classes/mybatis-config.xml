@@ -26,20 +26,6 @@
         <setting name="lazyLoadTriggerMethods" value="equals,clone,hashCode,toString"/>
     </settings>
 
-    <!-- 类型解析器 -->
-    <typeHandlers>
-        <typeHandler handler="com.example.mybatis.config.ExampleTypeHandler"/>
-    </typeHandlers>
-
-
-    <!-- mybatis-config.xml -->
-    <plugins>
-        <plugin interceptor="com.example.mybatis.config.ExamplePlugin">
-            <!-- 可以设置一些Property属性 -->
-            <!--            <property name="someProperty" value="100"/>-->
-        </plugin>
-    </plugins>
-
     <!-- 数据库 -->
     <environments default="development">
         <environment id="development">
