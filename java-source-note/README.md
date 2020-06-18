@@ -1,6 +1,6 @@
 # java-source-note
 
-Java8源码阅读笔记，源码测试见[src/com/example](src/com/example/)，源码阅读笔记直接记录在[源码](jdk/src)上。
+Java8源码阅读笔记，源码测试见[src/com/example](src/com/example/)，源码阅读笔记直接记录在[源码](../jdk/src)上。
 
 [ArrayList](#ArrayList)
 
