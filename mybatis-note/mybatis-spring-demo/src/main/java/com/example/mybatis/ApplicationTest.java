@@ -24,6 +24,7 @@ public class ApplicationTest {
     public static void testMapper(ApplicationContext applcationContext){
         UserMapper userMapper = (UserMapper)applcationContext.getBean("userMapper");
         User user = userMapper.selectOne(6001);
-        System.out.println(user);
+        User user1 = userMapper.selectOne(6001);
+        System.out.println(user == user1);
     }
 }
