@@ -3,9 +3,11 @@ package com.example.mybatis.model.entity;
 import lombok.Data;
 import org.apache.ibatis.type.Alias;
 
+import java.io.Serializable;
+
 @Alias("user") // mybatis的别名，或使用<typeAliases>标签设置
 @Data
-public class User {
+public class User implements Serializable {
 
     private Integer id;
 

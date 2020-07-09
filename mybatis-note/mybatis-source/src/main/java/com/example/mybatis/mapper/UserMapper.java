@@ -1,6 +1,7 @@
 package com.example.mybatis.mapper;
 
 import com.example.mybatis.model.entity.User;
+import org.apache.ibatis.annotations.CacheNamespace;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Select;
 
@@ -8,6 +9,7 @@ import org.apache.ibatis.annotations.Select;
  * 代理Mapper接口
  */
 @Mapper
+@CacheNamespace // 开启二级缓存
 public interface UserMapper {
 
     /**
@@ -31,5 +33,8 @@ public interface UserMapper {
      */
     @Select("select * from user where user_id = #{userId}")
     User selectOne(Integer userId);
+
+    @Select("select * from user where user_id = #{userId}")
+    User selectOneCache(Integer userId);
 
 }
