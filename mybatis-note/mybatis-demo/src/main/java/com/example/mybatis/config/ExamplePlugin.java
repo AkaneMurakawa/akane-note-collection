@@ -12,7 +12,7 @@ import java.util.Properties;
         method = "update",
         args = {MappedStatement.class,Object.class})})
 public class ExamplePlugin implements Interceptor {
-    @Override
+
     @SuppressWarnings("unchecked")
     public Object intercept(Invocation invocation) throws Throwable {
         MappedStatement mappedStatement = (MappedStatement)invocation.getArgs()[0];
@@ -31,12 +31,10 @@ public class ExamplePlugin implements Interceptor {
         return returnObject;
     }
 
-    @Override
     public Object plugin(Object target) {
         return Plugin.wrap(target, this);
     }
 
-    @Override
     public void setProperties(Properties properties) {
 
     }
