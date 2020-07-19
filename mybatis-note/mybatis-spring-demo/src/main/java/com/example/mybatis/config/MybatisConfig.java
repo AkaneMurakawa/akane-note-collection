@@ -61,6 +61,7 @@ public class MybatisConfig {
     public SqlSessionFactory sqlSessionFactory() throws Exception{
         SqlSessionFactoryBean factoryBean = new SqlSessionFactoryBean();
         factoryBean.setDataSource(dataSource());
+        // factoryBean.setMapperLocations(new PathMatchingResourcePatternResolver().getResources("classpath:META-INF/mybatis/mapper/**/*Mapper.xml"));
         return factoryBean.getObject();
 
     }
@@ -77,6 +78,7 @@ public class MybatisConfig {
         dataSource.setUsername(userName);
         dataSource.setPassword(password);
         return dataSource;
+//        return DataSourceBuilder.create().type(DruidDataSource.class).build();
     }
 
     /**
