@@ -19,7 +19,8 @@ public class ApplicationDemo {
 
     public static void main(String[] args)throws Exception {
         ApplicationDemo demo = new ApplicationDemo();
-        demo.sqlSessionMapper();
+//        demo.sqlSessionMapper();
+        demo.cacheTest();
     }
 
     /**
@@ -34,6 +35,24 @@ public class ApplicationDemo {
         SqlSession sqlSession = sqlSessionFactory.openSession();
         UserMapper mapper = sqlSession.getMapper(UserMapper.class);
         System.out.println(mapper.selectOne(6001));
+    }
+
+    /**
+     * 二级缓存测试
+     * @throws IOException
+     */
+    public void cacheTest()throws IOException{
+        // Mybatis的Resources工具类
+        InputStream inputStream = Resources.getResourceAsStream("mybatis-config.xml");
+        // 获取SqlSession工厂
+        sqlSessionFactory = new SqlSessionFactoryBuilder().build(inputStream);
+        SqlSession sqlSession1 = sqlSessionFactory.openSession();
+        SqlSession sqlSession2 = sqlSessionFactory.openSession();
+
+        System.out.println(sqlSession1.getMapper(UserMapper.class).selectOneCache(6001));
+//        sqlSession1.close();
+        sqlSession1.commit();
+        System.out.println(sqlSession2.getMapper(UserMapper.class).selectOneCache(6001));
     }
 
 
