@@ -5,7 +5,7 @@ import java.util.concurrent.BrokenBarrierException;
 import java.util.concurrent.CyclicBarrier;
 
 /**
- * CyclicBarrirer从名字上来理解是“循环的屏障”的意思。
+ * CyclicBarrier从名字上来理解是“循环的屏障”的意思。
  * 前面提到了CountDownLatch一旦计数值count被降为0后，就不能再重新设置了，它只能起一次“屏障”的作用。
  * 而CyclicBarrier拥有CountDownLatch的所有功能，还可以使用reset()方法重置屏障。
  */
