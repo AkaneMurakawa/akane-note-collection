@@ -5,7 +5,7 @@
         https://www.springframework.org/schema/beans/spring-beans.xsd">
 
     <!-- 通过导入复用 -->
-    <import resource="dependency-lookup-context.xml"/>
+    <import resource="spring-core.xml"/>
 
     <!-- 硬编码 手动配置 -->
     <!--<bean id="userRepository" class="com.example.ioc.dependency.repository.UserRepository">-->
