@@ -32,6 +32,7 @@ public class CallableDemo {
 
         Future result = executorService.submit(c);
         // 注意调用get方法会阻塞当前线程，直到得到结果
+        // 用途：阻塞，一直到线程结束，常用于线程池
         result.get();
 
         futureMethodDemo(result);
