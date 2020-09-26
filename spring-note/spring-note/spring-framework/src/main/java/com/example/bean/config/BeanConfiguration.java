@@ -9,7 +9,7 @@ import org.springframework.context.annotation.Configuration;
 @ComponentScan(basePackages = "com.example.*")
 public class BeanConfiguration {
 
-    @Bean("defaultUser")
+    @Bean(value = "defaultUser", initMethod = "init", destroyMethod = "destroy")
     public User getUser(){
         return User.createDefaultUser();
     }

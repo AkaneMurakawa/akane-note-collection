@@ -9,6 +9,14 @@ public class User {
 
     private String bio;
 
+    public void init(){
+        System.out.println("init default user");
+    }
+
+    public void destroy(){
+        System.out.println("destroy default user");
+    }
+
     @PostConstruct
     public void postConstruct(){
         System.out.println("postConstruct");
