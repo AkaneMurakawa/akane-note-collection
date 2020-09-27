@@ -15,7 +15,6 @@ public class UserBService {
 
     @Autowired
     @Qualifier("userA")
-    @Lazy
     public UserAService userAService;
 
     public UserBService() {

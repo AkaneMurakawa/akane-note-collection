@@ -14,4 +14,6 @@ public class Main {
 //        System.setProperty("path", "classpath");
 //        ClassPathXmlApplicationContext applicationContext = new ClassPathXmlApplicationContext("${path}:/META-INF/spring-core.xml");
     }
+
+
 }
