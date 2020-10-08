@@ -12,6 +12,7 @@ public class SpringbootNoteApplication {
 	public static void main(String[] args) {
 		// 方式一
 		SpringApplication application = new SpringApplication(SpringbootNoteApplication.class);
+		application.setWebApplicationType(WebApplicationType.NONE);
 		application.run(args);
 
 		// 方式二
@@ -20,7 +21,7 @@ public class SpringbootNoteApplication {
 		//		.run();
 
 		// 方式三
-		//SpringApplication.run(SpringbootNoteApplication.class, args);
+		SpringApplication.run(SpringbootNoteApplication.class, args);
 	}
 
 }
