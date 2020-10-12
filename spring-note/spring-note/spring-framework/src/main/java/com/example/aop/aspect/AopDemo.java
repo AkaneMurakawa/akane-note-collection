@@ -1,15 +1,17 @@
-package com.example.bean.demo.aop;
+package com.example.aop.aspect;
 
 
 import org.aspectj.lang.ProceedingJoinPoint;
 import org.aspectj.lang.annotation.*;
 import org.springframework.core.annotation.Order;
+import org.springframework.stereotype.Component;
 
-@Order(-1)
 @Aspect
+@Order(1)
+@Component
 public class AopDemo {
 
-    @Pointcut("execution(public * com.example.bean.service.*(..))")
+    @Pointcut("execution(public * com.example.aop..*(..))")
     public void pointcut(){}
 
     @Around("pointcut()")
