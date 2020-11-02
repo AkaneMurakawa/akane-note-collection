@@ -44,7 +44,7 @@ public class ReentrantReadWriteLockDemo {
         try{
             return Arrays.copyOf(counts, counts.length);
         }finally {
-            readLock.lock();
+            readLock.unlock();
         }
     }
 }

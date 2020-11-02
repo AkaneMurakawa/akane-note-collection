@@ -22,15 +22,15 @@ public class WaitAndNotifyDemo {
                 for (int i = 0; i < 5; i++) {
                     try{
                         System.out.println("Thread A:" + i);
-                        // 使用notify()方法叫醒另一个正在等待的线程
-                        lock.notify();
+                        // notifyAll()方法叫醒另一个正在等待的线程
+                        lock.notifyAll();
                         // 使用wait()方法陷入等待并释放lock锁
                         lock.wait();
                     }catch (InterruptedException e){
                         e.printStackTrace();
                     }
                 }
-                lock.notify();
+                lock.notifyAll();
             }
         }
     }
@@ -42,13 +42,13 @@ public class WaitAndNotifyDemo {
                 for (int i = 0; i < 5; i++) {
                     try{
                         System.out.println("Thread B:" + i);
-                        lock.notify();
+                        lock.notifyAll();
                         lock.wait();
                     }catch (InterruptedException e){
                         e.printStackTrace();
                     }
                 }
-                lock.notify();
+                lock.notifyAll();
             }
         }
     }
