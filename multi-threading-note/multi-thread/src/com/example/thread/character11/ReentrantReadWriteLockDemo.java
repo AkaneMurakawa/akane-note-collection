@@ -1,6 +1,6 @@
 package com.example.thread.character11;
 
-import java.util.Arrays;
+import java.util.Random;
 import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantReadWriteLock;
 
@@ -18,20 +18,22 @@ import java.util.concurrent.locks.ReentrantReadWriteLock;
  */
 public class ReentrantReadWriteLockDemo {
 
-    private final ReentrantReadWriteLock rwLock = new ReentrantReadWriteLock();
-    private final Lock readLock = rwLock.readLock();
-    private final Lock writeLock = rwLock.writeLock();
-    private int[] counts = new int[10];
+    private static final ReentrantReadWriteLock rwLock = new ReentrantReadWriteLock();
+    private static final Lock readLock = rwLock.readLock();
+    private static final Lock writeLock = rwLock.writeLock();
+    private static int value ;
 
     /**
      * 写
      */
-    public void addTask(int index){
-        writeLock.lock();
+    public static void read(Lock lock){
         try {
-            counts[index] += 1;
-        }finally {
-            writeLock.unlock();
+            lock.lock();
+            Thread.sleep(1000);
+            System.out.println("read over!" + value);
+        }catch (InterruptedException e){
+        } finally {
+            lock.unlock();
         }
 
     }
@@ -39,12 +41,28 @@ public class ReentrantReadWriteLockDemo {
     /**
      * 读
      */
-    private int[] getTask(){
-        readLock.lock();
+    public static void write(Lock lock, int v){
         try{
-            return Arrays.copyOf(counts, counts.length);
-        }finally {
-            readLock.unlock();
+            lock.lock();
+            Thread.sleep(1000);
+            value = v;
+            System.out.println("write over!");
+        }catch (InterruptedException e){
+        } finally {
+            lock.unlock();
+        }
+    }
+
+    public static void main(String[] args) {
+        Runnable read = () -> read(readLock);
+        Runnable write = () -> write(writeLock, new Random().nextInt(100));
+
+        for (int i = 0; i < 10; i++) {
+            new Thread(read).start();
+        }
+
+        for (int i = 0; i < 2; i++) {
+            new Thread(write).start();
         }
     }
 }
