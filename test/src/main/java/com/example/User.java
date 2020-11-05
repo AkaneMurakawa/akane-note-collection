@@ -1,4 +1,4 @@
-package com.example.thread.other;
+package com.example;
 
 public class User {
 
