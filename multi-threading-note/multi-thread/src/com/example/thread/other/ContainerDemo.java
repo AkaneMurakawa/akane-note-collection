@@ -1,6 +1,7 @@
 package com.example.thread.other;
 
 import java.util.LinkedList;
+import java.util.concurrent.TimeUnit;
 import java.util.concurrent.locks.Condition;
 import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
@@ -60,6 +61,12 @@ public class ContainerDemo<T> {
                     System.out.println(c.get());
                 }
             }).start();
+        }
+
+        try {
+            TimeUnit.SECONDS.sleep(1);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
         }
 
         for (int i = 0; i < 2; i++) {
