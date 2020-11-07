@@ -10,8 +10,8 @@ public class ReferenceTest {
         String a = new String("a");//强引用
         WeakReference<String> weakReference = new WeakReference<>(a);
         System.out.println(weakReference.get()); // a
-        a = null; // 去掉强引用
         System.gc();
+        a = null; // 去掉强引用
         System.out.println(weakReference.get()); // null
 
         String b = new String("b");//强引用

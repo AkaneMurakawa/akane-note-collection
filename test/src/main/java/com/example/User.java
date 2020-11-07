@@ -10,4 +10,12 @@ public class User {
         this.name = name;
         this.url = url;
     }
+
+    @Override
+    public String toString() {
+        return "User{" +
+                "name='" + name + '\'' +
+                ", url='" + url + '\'' +
+                '}';
+    }
 }
