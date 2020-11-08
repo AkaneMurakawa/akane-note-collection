@@ -27,5 +27,6 @@ public class WeakHashMapTest {
             System.out.println("key:" + entry.getKey());
             System.out.println("value:" + entry.getValue());
         }
+
     }
 }

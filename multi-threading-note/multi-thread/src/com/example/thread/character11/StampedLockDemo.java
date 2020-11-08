@@ -33,7 +33,6 @@ public class StampedLockDemo {
         long stamp = stampedLock.tryOptimisticRead();
 
         // 这两行代码不具有原子性
-        // 这两行代码不具有原子性
         double currentX = x;
         double currentY = y;
 
