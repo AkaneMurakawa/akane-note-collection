@@ -59,7 +59,7 @@ public class ForkJoinDemo {
                 f2.fork();
 
                 // f(n) = f(n-1) + f(n-2)
-                return f1.join() + f2.join();
+                return f1.join() + f2.join(); // 汇总
             }
         }
     }
