@@ -7,12 +7,12 @@ import java.util.concurrent.*;
  */
 public class ThreadPoolExecutorDemo {
 
-    private final Executor cachedThreadPool = Executors.newCachedThreadPool();
-    private final Executor fixedThreadPool = Executors.newFixedThreadPool(5);
-    private final Executor singleThreadExecutor = Executors.newSingleThreadExecutor();
-    private final Executor scheduledExecutor = Executors.newScheduledThreadPool(10);
+    private static final Executor cachedThreadPool = Executors.newCachedThreadPool();
+    private static final Executor fixedThreadPool = Executors.newFixedThreadPool(5);
+    private static final Executor singleThreadExecutor = Executors.newSingleThreadExecutor();
+    private static final Executor scheduledExecutor = Executors.newScheduledThreadPool(10);
 
-    private final Executor pool = new ThreadPoolExecutor(
+    private static final ThreadPoolExecutor pool = new ThreadPoolExecutor(
             5,
             10,
             10L,
@@ -32,6 +32,30 @@ public class ThreadPoolExecutorDemo {
     RejectedExecutionHandler discardPolicy = new ThreadPoolExecutor.DiscardPolicy();
 
     public static void main(String[] args) {
+        ThreadPoolExecutor pool1 = new ThreadPoolExecutor(
+                5,
+                10,
+                10L,
+                TimeUnit.MINUTES,
+                new LinkedBlockingDeque<>(50),
+                Executors.defaultThreadFactory(),
+                new ThreadPoolExecutor.AbortPolicy()
+        );
+
+        // pool1.submit();
+        // pool1.execute();
+
+        Executor pool2 = new ThreadPoolExecutor(
+                5,
+                10,
+                10L,
+                TimeUnit.MINUTES,
+                new LinkedBlockingDeque<>(50),
+                Executors.defaultThreadFactory(),
+                new ThreadPoolExecutor.AbortPolicy()
+        );
+        // pool2无submit，因为
+        // pool1.execute();
         System.out.println(Runtime.getRuntime().availableProcessors());
     }
 }
