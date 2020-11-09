@@ -32,5 +32,6 @@ public class ThreadPoolExecutorDemo {
     RejectedExecutionHandler discardPolicy = new ThreadPoolExecutor.DiscardPolicy();
 
     public static void main(String[] args) {
+        System.out.println(Runtime.getRuntime().availableProcessors());
     }
 }
