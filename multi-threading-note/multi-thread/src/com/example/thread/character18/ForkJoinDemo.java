@@ -1,11 +1,7 @@
 package com.example.thread.character18;
 
-import javafx.scene.paint.Stop;
 
-import java.util.concurrent.ExecutionException;
-import java.util.concurrent.ForkJoinPool;
-import java.util.concurrent.ForkJoinTask;
-import java.util.concurrent.RecursiveTask;
+import java.util.concurrent.*;
 
 /**
  * ForkJoin 示例
@@ -16,23 +12,24 @@ import java.util.concurrent.RecursiveTask;
  */
 public class ForkJoinDemo {
 
-
     public static void main(String[] args) throws InterruptedException, ExecutionException  {
         ForkJoinDemo demo = new ForkJoinDemo();
         demo.test();
     }
 
     public void test() throws InterruptedException, ExecutionException {
-        // 使用ForkJoinPool
-        ForkJoinPool forkJoinPool = new ForkJoinPool();
         System.out.println("CPU核数: " + Runtime.getRuntime().availableProcessors());
         long start = System.currentTimeMillis();
+
+        // 使用ForkJoinPool
+        ForkJoinPool forkJoinPool = new ForkJoinPool();
         Fibonacci fibonacci = new Fibonacci(40);
         ForkJoinTask<Integer> future = forkJoinPool.submit(fibonacci);
         System.out.println("result: " + future.get());
         long end = System.currentTimeMillis();
         System.out.println(String.format("耗时：%d millis", end - start));
     }
+
 
     /**
      * extends RecursiveTask<Integer>
@@ -53,15 +50,14 @@ public class ForkJoinDemo {
             }else {
                 // f(n-1)
                 Fibonacci f1 = new Fibonacci(n-1);
-                f1.fork();
                 // f(n-2)
                 Fibonacci f2 = new Fibonacci(n-2);
-                f2.fork();
+                f1.fork(); // 分叉
+                f2.fork(); // 分叉
 
                 // f(n) = f(n-1) + f(n-2)
                 return f1.join() + f2.join(); // 汇总
             }
         }
     }
-
 }
