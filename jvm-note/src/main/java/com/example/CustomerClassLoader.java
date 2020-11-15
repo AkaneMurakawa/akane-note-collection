@@ -10,6 +10,17 @@ import java.io.IOException;
  */
 public class CustomerClassLoader extends ClassLoader{
 
+    public CustomerClassLoader() {
+    }
+
+    /**
+     * 自定义父类
+     * @param parent
+     */
+    public CustomerClassLoader(ClassLoader parent) {
+        super(parent);
+    }
+
     @Override
     protected Class<?> findClass(String name) throws ClassNotFoundException {
         File f = new File("D:\\project\\akane-note-collection\\jvm-note\\src\\main\\java\\", name.replace(".", "/").concat(".class"));
