@@ -1,45 +1,62 @@
 package com.example;
 
+import java.io.ByteArrayOutputStream;
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.IOException;
+
 /**
  * 自定义类加载器
  */
 public class CustomerClassLoader extends ClassLoader{
 
     @Override
-    protected Class<?> loadClass(String name, boolean resolve) throws ClassNotFoundException {
-        return super.loadClass(name, resolve);
-//        synchronized (getClassLoadingLock(name)) {
-//            // First, check if the class has already been loaded
-//            Class<?> c = findLoadedClass(name);
-//            if (c == null) {
-//                long t0 = System.nanoTime();
-//                try {
-//                    if (parent != null) {
-//                        c = parent.loadClass(name, false);
-//                    } else {
-//                        c = findBootstrapClassOrNull(name);
-//                    }
-//                } catch (ClassNotFoundException e) {
-//                    // ClassNotFoundException thrown if class not found
-//                    // from the non-null parent class loader
-//                }
-//
-//                if (c == null) {
-//                    // If still not found, then invoke findClass in order
-//                    // to find the class.
-//                    long t1 = System.nanoTime();
-//                    c = findClass(name);
-//
-//                    // this is the defining class loader; record the stats
-//                    sun.misc.PerfCounter.getParentDelegationTime().addTime(t1 - t0);
-//                    sun.misc.PerfCounter.getFindClassTime().addElapsedTimeFrom(t1);
-//                    sun.misc.PerfCounter.getFindClasses().increment();
-//                }
-//            }
-//            if (resolve) {
-//                resolveClass(c);
-//            }
-//            return c;
-//        }
+    protected Class<?> findClass(String name) throws ClassNotFoundException {
+        File f = new File("D:\\project\\akane-note-collection\\jvm-note\\src\\main\\java\\", name.replace(".", "/").concat(".class"));
+        FileInputStream fis = null;
+        ByteArrayOutputStream baos = null;
+        try {
+            fis = new FileInputStream(f);
+            baos = new ByteArrayOutputStream();
+            int b = 0;
+
+            while ((b=fis.read()) != 0){
+                baos.write(b);
+            }
+            byte[] bytes = baos.toByteArray();
+            return defineClass(name, bytes, 0, bytes.length);
+        }catch (Exception e){
+        }finally {
+            if (baos != null){
+                try {
+                    baos.close();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
+            if (fis != null){
+                try {
+                    fis.close();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
+        }
+        return super.findClass(name);
+    }
+
+//    @Override
+//    protected Class<?> loadClass(String name, boolean resolve) throws ClassNotFoundException {
+//        return super.loadClass(name, resolve);
+//    }
+
+    public static void main(String[] args) throws Exception{
+        CustomerClassLoader classLoader = new CustomerClassLoader();
+        Class<?> loadClass = classLoader.loadClass("com.example.Hello");
+        Hello instance = (Hello)loadClass.newInstance();
+        instance.say();
+
+        System.out.println(classLoader.getClass().getClassLoader());
+        System.out.println(classLoader.getParent());
     }
 }
